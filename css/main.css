@@ -18,6 +18,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-flow:row wrap;
+	margin: 0 auto;
 }
 
 h1,
@@ -50,30 +51,33 @@ header {
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
+	width: 100%;
+	text-align: center;
 }
 
 header h1 {
 	margin: 0;
-	padding: 38px 0;
+	padding: 20px 0;
+	width: 100%;
+	border-bottom: solid #77a466;
 }
 header h1 span {
 	color: #77a466;
 }
 
 header nav {
-	padding: 46px 0;
+	width: 100%;
 }
 header nav ul {
 	margin: 10px;
 	padding: 0px;
+	list-style: none;
 }
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 0.875em;
-	padding: 0 10px;
-	display: flex;
-	flex: column wrap;
+	padding: 15px 15px;
 }
 header nav ul li a{
 	text-decoration: none;
@@ -114,19 +118,22 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 33%%;
+	width: 100%;
 	border-top: 1px solid #eee;
 }
-
+/*
 .section-one h3 {
 	padding: 10px 0;
 }
-
+*/
+/* Add this to media query for tablet & desktop 
 .section-two {
 	border-left: 1px solid #eee;
 	border-right: 1px solid #eee;
 }
+*/
 
+.section-one h3,
 .section-two h3,
 .section-three h3 {
 	padding: 10px 30px;
@@ -137,7 +144,7 @@ header nav ul li a{
 	padding: 0;
 }
 .menu li {
-	padding: 10px 0;
+	padding: 10px 30px;
 	color:#77a466;
 }
 
@@ -159,6 +166,7 @@ footer {
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
+	width: 100%;
 }
 footer span {
 	font-family: 'Galada', cursive;
@@ -166,4 +174,3 @@ footer span {
 	color: #77a466;
 	font-size: 0.875em;
 }
-margin: 0 auto;
